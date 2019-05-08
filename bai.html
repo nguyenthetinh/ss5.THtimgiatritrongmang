@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="tt" type="text">
+<input type="button" onclick="ketqua()" value="onclick"><br><br>
+<p id="rs"></p>
+<script>
+    function ketqua() {
+        a=document.getElementById("tt").value
+        let x=["10","11","12","13"]
+        for (i=0 ; i<x.length ; i++){
+            if (a===x[i]){
+                document.getElementById("rs").innerHTML="gia tri : "+x[i]+" vitri "+i
+                break;
+            }else if (a!==x[i]){
+                document.getElementById("rs").innerHTML="gia tri  kong co trong mang"
+
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
